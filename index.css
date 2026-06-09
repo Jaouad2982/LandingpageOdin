@@ -172,6 +172,8 @@ blockquote {
   width: 100%;
   margin: 0 auto;
   padding: 36px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-paragraph > p:first-child {
@@ -194,6 +196,8 @@ blockquote {
   /* The second value after the comma is the default fallback */
   justify-content: var(--justify, center);
 }
+
+/* responsivness and media queries */
 
 @media (max-width: 575.98px) {
 }

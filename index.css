@@ -50,10 +50,9 @@ body {
 .sub-header {
   background-color: var(--header-color);
   display: flex;
+  justify-content: center;
   max-width: 1100px;
   margin: 0 auto;
-  justify-content: space-around;
-  align-items: center;
 
   gap: 14rem;
 }
@@ -69,7 +68,6 @@ body {
 .subheader-btn {
   color: var(--text-color);
   background-color: var(--subheader-color);
-  border-radius: 10px;
   width: 25%;
   border-radius: 10px;
   padding: 10px;
@@ -169,10 +167,6 @@ blockquote {
 }
 
 .footer {
-  display: flex;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 13px;
   background-color: var(--subheader-color);
   width: 100%;
@@ -196,8 +190,9 @@ blockquote {
 
 .common-class-flexbox {
   display: flex;
-  justify-content: center;
   align-items: center;
+  /* The second value after the comma is the default fallback */
+  justify-content: var(--justify, center);
 }
 
 @media (max-width: 575.98px) {
